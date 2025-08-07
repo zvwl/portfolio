@@ -1,0 +1,50 @@
+[
+  {
+    "role": "Penetration Testing Intern",
+    "organisation": "BeeSec",
+    "startDate": "May 2025",
+    "endDate": "Aug 2025",
+    "experiences": [
+      "Executed penetration testing tasks including reconnaissance, enumeration, and vulnerability assessment",
+      "Configured tools such as Burp Suite, Nmap, and SSH within Kali Linux environments",
+      "Currently preparing for CREST Practitioner Security Analyst certification"
+    ],
+    "imageSrc": "history/beesec_icon.png"
+  },
+  {
+    "role": "Apple Product Specialist & Repair Technician",
+    "organisation": "The IT Store",
+    "startDate": "Sept 2024",
+    "endDate": "Mar 2025",
+    "experiences": [
+      "Delivered exceptional customer service, advising on over 20 Apple products weekly",
+      "Achieved 98% customer satisfaction rating and increased store sales by 15%",
+      "Performed diagnostics and repairs on over 10 Apple devices weekly, reducing turnaround time by 15%"
+    ],
+    "imageSrc": "history/apple_icon.png"
+  },
+  {
+    "role": "Clearing Hotline Operator",
+    "organisation": "University of Kent",
+    "startDate": "Aug 2024",
+    "endDate": "Sept 2024",
+    "experiences": [
+      "Processed over 50 Clearing applications daily with 97% accuracy",
+      "Collaborated with university teams including Accommodation, pre-CAS, and Student Union",
+      "Responded to over 50 queries daily from prospective students, providing accurate information"
+    ],
+    "imageSrc": "history/university_of_kent_icon.png"
+  },
+  {
+    "role": "Work Experience",
+    "organisation": "BT",
+    "startDate": "Oct 2020",
+    "endDate": "Nov 2020",
+    "experiences": [
+      "Gained experience using Elastic Common Schema (ECS) to structure and analyse log data",
+      "Delivered a group presentation on ECS to BT engineers",
+      "Shadowed cyber and software teams to understand logging, monitoring, and security operations"
+    ],
+    "imageSrc": "history/bt_icon.png"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Python",
+    "imageSrc": "skills/python_icon.png"
+  },
+  {
+    "title": "Java",
+    "imageSrc": "skills/java_icon.png"
+  },
+  {
+    "title": "C#",
+    "imageSrc": "skills/csharp_icon.png"
+  },
+  {
+    "title": "PHP",
+    "imageSrc": "skills/php_icon.png"
+  },
+  {
+    "title": "Kali Linux",
+    "imageSrc": "skills/kali_linux_icon.png"
+  },
+  {
+    "title": "Burp Suite",
+    "imageSrc": "skills/burp_suite_icon.png"
+  },
+  {
+    "title": "Nmap",
+    "imageSrc": "skills/nmap_icon.png"
+  },
+  {
+    "title": "Wireshark",
+    "imageSrc": "skills/wire_shark_icon.png"
+  },
+  {
+    "title": "Metasploit",
+    "imageSrc": "skills/metasploit_icon.png"
+  },
+  {
+    "title": "Docker",
+    "imageSrc": "skills/docker_icon.png"
+  },
+  {
+    "title": "SQL",
+    "imageSrc": "skills/sql_icon.png"
+  },
+  {
+    "title": "Bash",
+    "imageSrc": "skills/bash_icon.png"
+  }
+]

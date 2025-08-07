@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Network Traffic Analyser",
+    "imageSrc": "projects/project.png",
+    "description": "Machine learning-based traffic analyser with 98-100% attack detection using Random Forest classification and real-time window temporal analysis.",
+    "skills": ["Python", "Scikit-learn", "Pandas", "Machine Learning", "Network Security"],
+    "demo": "https://github.com/danielholecek",
+    "source": "https://github.com/danielholecek"
+  },
+  {
+    "title": "Wireless IoT Plant Monitoring Device",
+    "imageSrc": "projects/project.png",
+    "description": "IoT device monitoring soil humidity with 95% accuracy, featuring automated irrigation and real-time notifications using HTTP protocol.",
+    "skills": ["IoT", "HTTP", "Real-time Systems", "Automation", "Sensor Integration"],
+    "demo": "https://github.com/danielholecek",
+    "source": "https://github.com/danielholecek"
+  }
+]

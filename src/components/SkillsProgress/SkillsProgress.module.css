@@ -1,0 +1,143 @@
+@import "../../vars.css";
+
+.container {
+  position: relative;
+  background-color: rgba(12, 12, 12, 0.6);
+  border-radius: 15px;
+  padding: 73px;
+  margin-top: 129px;
+  z-index: 1;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.title {
+  color: var(--color-text);
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.skillsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.skillItem {
+  background: linear-gradient(
+    135deg,
+    rgba(165, 215, 232, 0.1) 0%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+  border-radius: 12px;
+  padding: 25px;
+  border: 1px solid rgba(165, 215, 232, 0.2);
+  transition: all 0.3s ease;
+}
+
+.skillItem:hover {
+  border-color: rgba(165, 215, 232, 0.4);
+  box-shadow: 0 8px 25px rgba(165, 215, 232, 0.15);
+}
+
+.skillHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  gap: 10px;
+}
+
+.skillName {
+  color: var(--color-text);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.skillCategory {
+  color: #000;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.progressContainer {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.progressBackground {
+  flex: 1;
+  height: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progressBar {
+  height: 100%;
+  border-radius: 4px;
+  position: relative;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.progressBar::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  border-radius: 4px 4px 0 0;
+}
+
+.progressText {
+  color: var(--color-text);
+  font-size: 16px;
+  font-weight: 600;
+  min-width: 40px;
+  text-align: right;
+}
+
+@media screen and (max-width: 830px) {
+  .container {
+    background-color: transparent;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .skillsGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .skillItem {
+    padding: 20px;
+  }
+
+  .skillHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .progressContainer {
+    gap: 10px;
+  }
+}

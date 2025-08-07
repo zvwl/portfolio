@@ -1,0 +1,119 @@
+@import "../../vars.css";
+
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(135deg, #0f0f1a 0%, #1a1a2e 50%, #16213e 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+.content {
+  text-align: center;
+  z-index: 2;
+  padding: 20px;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 900;
+  color: var(--color-text);
+  margin-bottom: 20px;
+  font-family: var(--font-roboto);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 70%,
+    rgba(165, 215, 232, 1) 100%
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  letter-spacing: 2px;
+}
+
+.subtitle {
+  font-size: 20px;
+  color: var(--color-primary);
+  margin-bottom: 40px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.loadingBar {
+  width: 300px;
+  height: 4px;
+  background: rgba(165, 215, 232, 0.2);
+  border-radius: 2px;
+  margin: 30px auto;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background: linear-gradient(90deg, var(--color-primary), #7bc3d4);
+  border-radius: 2px;
+  box-shadow: 0 0 20px rgba(165, 215, 232, 0.6);
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  box-shadow: 0 0 15px rgba(165, 215, 232, 0.5);
+}
+
+.backgroundBlur {
+  position: absolute;
+  width: 80vw;
+  height: 80vh;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(25, 55, 109, 0.3) 0%,
+    rgba(165, 215, 232, 0.1) 50%,
+    transparent 100%
+  );
+  filter: blur(100px);
+  z-index: 1;
+  animation: pulse 4s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.9;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .title {
+    font-size: 36px;
+  }
+  
+  .subtitle {
+    font-size: 18px;
+  }
+  
+  .loadingBar {
+    width: 250px;
+  }
+}
