@@ -10,6 +10,7 @@ import { Hero } from "./components/Hero/Hero";
 import { LoadingScreen } from "./components/LoadingScreen/LoadingScreen";
 import { Navbar } from "./components/Navbar/Navbar";
 import { Projects } from "./components/Projects/Projects";
+import { Skills } from "./components/Skills/Skills";
 import { SkillsProgress } from "./components/SkillsProgress/SkillsProgress";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
@@ -41,6 +42,7 @@ function App() {
             <Navbar />
             <Hero />
             <About />
+            <Skills />
             <SkillsProgress />
             <Experience />
             <Projects />

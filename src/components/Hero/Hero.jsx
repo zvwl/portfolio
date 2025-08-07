@@ -27,17 +27,33 @@ export const Hero = () => {
         delay: 0.4,
         ease: "easeOut"
       }
-    },
-    hover: {
-      scale: 1.05,
-      transition: {
-        duration: 0.2,
-        ease: "easeInOut"
-      }
-    },
-    tap: {
-      scale: 0.95
     }
+  };
+
+  const contactButtonHover = {
+    scale: 1.08,
+    y: -3,
+    boxShadow: "0 10px 25px rgba(59, 130, 246, 0.4)",
+    transition: {
+      duration: 0.3,
+      ease: "easeInOut"
+    }
+  };
+
+  const downloadButtonHover = {
+    scale: 1.08,
+    y: -3,
+    boxShadow: "0 10px 25px rgba(74, 144, 226, 0.5)",
+    background: "linear-gradient(135deg, #5ba0f2, #4689d0)",
+    transition: {
+      duration: 0.3,
+      ease: "easeInOut"
+    }
+  };
+
+  const buttonTap = {
+    scale: 0.95,
+    y: 0
   };
 
   const imageVariants = {
@@ -82,8 +98,9 @@ export const Hero = () => {
           <motion.a 
             href="mailto:daniel.holecek50@gmail.com" 
             className={styles.contactBtn}
-            whileHover="hover"
-            whileTap="tap"
+            whileHover={contactButtonHover}
+            whileTap={buttonTap}
+            initial="visible"
           >
             Contact Me
           </motion.a>
@@ -91,8 +108,9 @@ export const Hero = () => {
             href="/Daniel_Holecek_CV.pdf" 
             download="Daniel_Holecek_CV.pdf"
             className={styles.downloadBtn}
-            whileHover="hover"
-            whileTap="tap"
+            whileHover={downloadButtonHover}
+            whileTap={buttonTap}
+            initial="visible"
           >
             Download CV
           </motion.a>

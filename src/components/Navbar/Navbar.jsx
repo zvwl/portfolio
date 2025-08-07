@@ -69,7 +69,10 @@ export const Navbar = () => {
             <a href="#about" onClick={(e) => handleSmoothScroll(e, 'about')}>About</a>
           </li>
           <li>
-            <a href="#skills-progress" onClick={(e) => handleSmoothScroll(e, 'skills-progress')}>Skills</a>
+            <a href="#skills" onClick={(e) => handleSmoothScroll(e, 'skills')}>Skills</a>
+          </li>
+          <li>
+            <a href="#skills-progress" onClick={(e) => handleSmoothScroll(e, 'skills-progress')}>Proficiency</a>
           </li>
           <li>
             <a href="#experience" onClick={(e) => handleSmoothScroll(e, 'experience')}>Experience</a>
@@ -118,7 +121,10 @@ export const Navbar = () => {
                 <a href="#about" onClick={(e) => handleSmoothScroll(e, 'about')}>About</a>
               </motion.li>
               <motion.li variants={itemVariants}>
-                <a href="#skills-progress" onClick={(e) => handleSmoothScroll(e, 'skills-progress')}>Skills</a>
+                <a href="#skills" onClick={(e) => handleSmoothScroll(e, 'skills')}>Skills</a>
+              </motion.li>
+              <motion.li variants={itemVariants}>
+                <a href="#skills-progress" onClick={(e) => handleSmoothScroll(e, 'skills-progress')}>Proficiency</a>
               </motion.li>
               <motion.li variants={itemVariants}>
                 <a href="#experience" onClick={(e) => handleSmoothScroll(e, 'experience')}>Experience</a>
