@@ -11,6 +11,7 @@ import { LoadingScreen } from "./components/LoadingScreen/LoadingScreen";
 import { Navbar } from "./components/Navbar/Navbar";
 import { Projects } from "./components/Projects/Projects";
 import { SkillsProgress } from "./components/SkillsProgress/SkillsProgress";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -46,6 +47,7 @@ function App() {
             <Education />
             <GitHub />
             <Contact />
+            <ScrollToTop />
           </motion.div>
         )}
       </AnimatePresence>

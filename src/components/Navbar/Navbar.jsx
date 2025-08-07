@@ -58,6 +58,37 @@ export const Navbar = () => {
         Daniel Holecek
       </motion.a>
       <div className={styles.menu}>
+        {/* Desktop Menu Items */}
+        <motion.ul
+          className={styles.menuItemsDesktop}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.2 }}
+        >
+          <li>
+            <a href="#about" onClick={(e) => handleSmoothScroll(e, 'about')}>About</a>
+          </li>
+          <li>
+            <a href="#skills-progress" onClick={(e) => handleSmoothScroll(e, 'skills-progress')}>Skills</a>
+          </li>
+          <li>
+            <a href="#experience" onClick={(e) => handleSmoothScroll(e, 'experience')}>Experience</a>
+          </li>
+          <li>
+            <a href="#projects" onClick={(e) => handleSmoothScroll(e, 'projects')}>Projects</a>
+          </li>
+          <li>
+            <a href="#education" onClick={(e) => handleSmoothScroll(e, 'education')}>Education</a>
+          </li>
+          <li>
+            <a href="#github" onClick={(e) => handleSmoothScroll(e, 'github')}>GitHub</a>
+          </li>
+          <li>
+            <a href="#contact" onClick={(e) => handleSmoothScroll(e, 'contact')}>Contact</a>
+          </li>
+        </motion.ul>
+
+        {/* Mobile Menu Button */}
         <motion.img
           className={styles.menuBtn}
           src={
@@ -72,6 +103,8 @@ export const Navbar = () => {
           animate={{ rotate: menuOpen ? 180 : 0 }}
           transition={{ duration: 0.3 }}
         />
+        
+        {/* Mobile Menu Items */}
         <AnimatePresence>
           {menuOpen && (
             <motion.ul
