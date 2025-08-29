@@ -10,7 +10,7 @@ export const GitHub = () => {
     publicRepos: 0,
     followers: 0,
     following: 0,
-    totalCommits: 0
+  // totalCommits: 0
   });
   const [repositories, setRepositories] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -24,26 +24,19 @@ export const GitHub = () => {
       try {
         setLoading(true);
         
-        // GitHub API headers with your personal access token
-        const headers = {
-          'Authorization': `token ${import.meta.env.VITE_GITHUB_TOKEN}`,
-          'Accept': 'application/vnd.github.v3+json'
-        };
-        
-        // Fetch user stats
-        const userResponse = await fetch(`https://api.github.com/users/${GITHUB_USERNAME}`, { headers });
-        const userData = await userResponse.json();
-        
-        // Fetch repositories
-        const reposResponse = await fetch(`https://api.github.com/users/${GITHUB_USERNAME}/repos?sort=updated&per_page=6`, { headers });
-        const reposData = await reposResponse.json();
+  // Fetch user stats (public data, no token)
+  const userResponse = await fetch(`https://api.github.com/users/${GITHUB_USERNAME}`);
+  const userData = await userResponse.json();
+
+  // Fetch repositories (public data, no token)
+  const reposResponse = await fetch(`https://api.github.com/users/${GITHUB_USERNAME}/repos?sort=updated&per_page=6`);
+  const reposData = await reposResponse.json();
         
         // Update stats
         setStats({
           publicRepos: userData.public_repos || 0,
           followers: userData.followers || 0,
-          following: userData.following || 0,
-          totalCommits: 150 // GitHub API doesn't provide total commits easily, so keeping estimated
+          following: userData.following || 0
         });
         
         // Update repositories (filter out forks and select most relevant)
@@ -67,8 +60,7 @@ export const GitHub = () => {
         setStats({
           publicRepos: 12,
           followers: 8,
-          following: 15,
-          totalCommits: 150
+          following: 15
         });
         setRepositories([
           {
@@ -172,17 +164,7 @@ export const GitHub = () => {
           <div className={styles.statLabel}>Repositories</div>
         </motion.div>
 
-        <motion.div className={styles.statItem} variants={statVariants}>
-          <motion.div 
-            className={styles.statNumber}
-            initial={{ opacity: 0 }}
-            animate={isVisible ? { opacity: 1 } : { opacity: 0 }}
-            transition={{ delay: 1.2, duration: 0.5 }}
-          >
-            {stats.totalCommits}+
-          </motion.div>
-          <div className={styles.statLabel}>Contributions</div>
-        </motion.div>
+  {/* Contributions stat removed due to API limitations */}
 
         <motion.div className={styles.statItem} variants={statVariants}>
           <motion.div 

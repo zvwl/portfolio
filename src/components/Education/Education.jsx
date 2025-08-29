@@ -125,19 +125,6 @@ export const Education = () => {
               <p>Completed</p>
             </motion.div>
             
-            <motion.div 
-              className={styles.certItem}
-              variants={certVariants}
-              whileHover={{ 
-                scale: 1.05,
-                boxShadow: "0 8px 25px rgba(255, 215, 100, 0.3)",
-                transition: { duration: 0.2 }
-              }}
-            >
-              <div className={styles.certBadge + " " + styles.inProgress}>⏳</div>
-              <h4>CREST Practitioner Security Analyst</h4>
-              <p>In Progress</p>
-            </motion.div>
           </motion.div>
         </motion.div>
       </div>
