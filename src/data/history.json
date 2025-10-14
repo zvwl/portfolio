@@ -1,5 +1,19 @@
 [
   {
+    "role": "IT Support Specialist",
+    "organisation": "Fire Protection Online",
+    "startDate": "Sept 2025",
+    "endDate": "Present",
+    "experiences": [
+      "Provide day-to-day IT support, system maintenance, and troubleshooting across hardware, software, and networks.",
+      "Develop SQL scripts and automation tools to enhance reporting, streamline workflows, and maintain database integrity.",
+      "Oversee website and system operations to ensure smooth business performance and minimise downtime.",
+      "Engage in monthly B2B meetings to discuss and implement technical improvements that enhance business efficiency and system reliability.",
+      "Collaborate with external IT providers while gradually assuming greater responsibility for in-house infrastructure and system management."
+    ],
+    "imageSrc": "history/FireProtectionOnlineLogo.png"
+  },
+  {
     "role": "Penetration Testing Intern",
     "organisation": "BeeSec",
     "startDate": "May 2025",
