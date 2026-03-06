@@ -87,7 +87,7 @@ export const Hero = () => {
           variants={textVariants}
           transition={{ delay: 0.2 }}
         >
-          IT Support & Cyber Security Graduate with a strong background in technical troubleshooting and system security. 
+          IT Support & Cyber Security Professional with a strong background in technical troubleshooting and system security. 
           Experienced in supporting users, managing networks, and implementing best practices to keep environments safe and efficient.
         </motion.p>
         <motion.div 
